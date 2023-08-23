@@ -78,6 +78,12 @@ app.delete("/todos/:id", async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
-  console.log("Server is running on port 8080");
+const port = 8080; // Set the desired port number
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
+
+// app.listen(8080, () => {
+//   console.log("Server is running on port 8080");
+// });
